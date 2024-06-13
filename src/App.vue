@@ -1,28 +1,26 @@
+<!--
+ * @Author: baolingtao baolingtao@weiling.cn
+ * @Date: 2024-06-13 14:26:35
+ * @LastEditors: baolingtao baolingtao@weiling.cn
+ * @LastEditTime: 2024-06-13 14:58:14
+ * @FilePath: \my-vue-project\src\App.vue
+ * @Description: 
+ * 
+ * Copyright (c) 2024 by ${baolingtao}, All Rights Reserved. 
+-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <quill-editor></quill-editor>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import QuillEditor from "./components/QuillEditor.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    QuillEditor,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
